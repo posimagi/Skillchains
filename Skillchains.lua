@@ -155,7 +155,7 @@ function update_weapon()
     if not settings.Show.weapon[info.job] then
         return
     end
-    local main_weapon = windower.ffxi.get_items(info.main_bag, info.main_weapon).id
+    local main_weapon = info.main_bag and info.main_weapon and windower.ffxi.get_items(info.main_bag, info.main_weapon).id or 0
     if main_weapon ~= 0 then
         info.aeonic = aeonic_weapon[main_weapon] or info.range and aeonic_weapon[windower.ffxi.get_items(info.range_bag, info.range).id]
         return
