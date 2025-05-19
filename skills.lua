@@ -755,6 +755,7 @@ skills.monster_abilities = {
     [3938] = {en='Somersault',skillchain={'Compression'}},
     [3941] = {en='Pecking Flurry',skillchain={'Transfixion'}},
     [3942] = {en='Sickle Slash',skillchain={'Transfixion'}},
+    [3953] = {en="Mega Scissors",skillchain={'Gravitation','Scission'}},
     [4050] = {en='Wild Oats',skillchain={'Transfixion'}},
     [4124] = {en='Bomb Toss',skillchain={'Liquefaction'}},
     [4158] = {en='Blade: Metsu',skillchain={'Darkness','Fragmentation'}},

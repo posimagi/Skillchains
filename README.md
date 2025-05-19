@@ -1,8 +1,10 @@
-# SkillChains
-### Active Battle Skillchain Display.
+# Skillchains
+### Active Battle Skillchain Display
 
-Displays a text object containing skillchain elements resonating on current target, timer for skillchain window,
-along with a list of weapon skills that can skillchain based on the weapon you have currently equipped. 
+*This is a fork of [Ivaar's addon](https://github.com/Ivaar/Skillchains) with updates for newer skills.*
+
+Displays a text object containing Skillchain elements resonating on current target, timer for Skillchain window,
+along with a list of Weapon Skills that can Skillchain based on the weapon you have currently equipped. 
 
     //sc color    -- colorize properties and elements
     
@@ -28,4 +30,25 @@ The following commands toggle the display information and are saved on a per job
 
     //sc step     -- current weaponskill step information.
 
-More settings related to text object can be found within the settings.xml, generated on addon load
+More settings related to text object can be found within the settings.xml, generated on addon load.
+
+---
+
+### Installation
+
+1. Download the ZIP file from the green Code menu in the upper right.
+2. Open the ZIP file, and extract the folder within to the `addons` folder in the directory where you installed Windower.
+3. Rename the folder to `Skillchains` (remove the trailing `-master`).
+
+---
+
+### Usage
+
+- To load Skillchains every time you launch the game, edit the `scripts\init.txt` file in the directory where you installed Windower and add the following line:
+    ```
+    lua load skillchains
+    ```
+- To load Skillchains only once, do any of the following:
+  - (in the chat window) `//lua load skillchains`
+  - (in the Windower console) `lua load skillchains`
+  - (in an in-game macro) `/con lua load skillchains`
